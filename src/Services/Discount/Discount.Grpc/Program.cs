@@ -13,7 +13,7 @@ builder.Services.AddScoped<IDiscountRepository, DiscountRepository>();
 builder.Services.AddAutoMapper(typeof(StartupBase));
 var app = builder.Build();
 
-app.MigrateDatabase<Program>();
+//app.MigrateDatabase<Program>();
 
 // Configure the HTTP request pipeline.
 app.MapGrpcService<GreeterService>(); //can be commented, will prolly not be used
